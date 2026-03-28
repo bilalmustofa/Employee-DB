@@ -1,11 +1,45 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Employee Database</title>
-</head>
-<body>
-    <h1>aselamu alykum</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Employee System</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Employee Database Management</h1>
+      <button>Add Employee</button>
+    </header>
+
+    <div id="container">
+      <div class="emp-list">
+        <h2>Employee List</h2>
+        <div id="employeeList"></div>
+      </div>
+
+      <div id="employeeDetails">
+        <h2>Employee Details</h2>
+        <div id="detailsContent">Click an employee</div>
+      </div>
+    </div>
+
+    <!-- Employee Add Form -->
+    <div id="formPopup" class="hidden">
+      <div class="formBox">
+        <h2>Add Employee</h2>
+
+        <input type="text" id="firstName" placeholder="First Name" />
+        <input type="text" id="lastName" placeholder="Last Name" />
+        <input type="email" id="email" placeholder="Email" />
+        <input type="text" id="phone" placeholder="Phone" />
+        <input type="text" id="salary" placeholder="Salary" />
+        <input type="date" id="dob" />
+
+        <button id="saveBtn">Save</button>
+        <button id="closeBtn">Close</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>

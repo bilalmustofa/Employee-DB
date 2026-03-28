@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "firstName": "Abel",
+    "lastName": "Tesfaye",
+    "email": "abel@gmail.com",
+    "phone": "0911111111",
+    "salary": "8000",
+    "dob": "1990-02-16"
+  },
+  {
+    "id": 2,
+    "firstName": "Sara",
+    "lastName": "Ali",
+    "email": "sara@gmail.com",
+    "phone": "0922222222",
+    "salary": "6000",
+    "dob": "1995-07-10"
+  }
+]

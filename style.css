@@ -1,0 +1,43 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px ;
+  padding: 20px;
+  background-color: azure;
+
+}
+
+header button {
+  background-color: antiquewhite;
+  border-radius: 10px;
+  padding: 7px;
+}
+
+#container {
+  display: flex;
+  justify-content: space-between;
+  border: 2px brown solid;
+  margin: 10px;
+  padding: 25px 10px;
+}
+
+.emp-list {
+  border: solid gray 2px;
+  width: 50%;
+}
+
+#employeeDetails{
+   border: solid gray 2px;
+   width: 50%;
+
+}
+
+#employeeDetails h2{
+  padding: 5px;
+}
