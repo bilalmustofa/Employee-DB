@@ -13,7 +13,7 @@ header {
 
 }
 
-header button {
+header button, #saveBtn, #closeBtn {
   background-color: orange;
   border-radius: 10px;
   border: none;
@@ -21,6 +21,11 @@ header button {
   cursor: pointer;
   font-weight: bold;
 }
+
+header button:hover {
+  transform: scale(0.95);
+}
+
 
 #container {
   display: flex;
