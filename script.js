@@ -29,14 +29,15 @@ closeBtn.onclick = () => {
 saveBtn.onclick = () => {
     let newEmp = {
         id: Date.now(),
-        firstName: document.getElementById("firstName").Value,
-        lastName: document.getElementById("lastName").Value,
+        firstName: document.getElementById("firstName").value,
+        lastName: document.getElementById("lastName").value,
         email: document.getElementById("email").value,
         phone: document.getElementById("phone").value,
         salary: document.getElementById("salary").value,
         dob: document.getElementById("dob").value
     }
     employees.push(newEmp);
+    renderEmployees();
     formPopup.classList.add("hidden");
 }
 
@@ -44,4 +45,35 @@ saveBtn.onclick = () => {
 function renderEmployees() {
     let list = document.getElementById("employeeList");
     list.innerHTML = "";
+
+    employees.forEach(emp => {
+        let div = document.createElement("div");
+        div.className = "employee";
+        div.innerHTML = `
+        <strong>${emp.firstName} ${emp.lastName}</strong> <br>
+        <button onclick ="deleteEmployee(${emp.id})">Delete</button>`;
+        div.onclick =  () => renderSingleEmployee(emp.id);
+        list.appendChild(div);
+    });
+}
+
+// DELETE
+function deleteEmployee(id) {
+  employees = employees.filter(emp => emp.id !== id);
+  renderEmployees();
+  document.getElementById("detailsContent").innerHTML = "Click an employee";
+}
+
+// SHOW SINGLE EMPLOYEE
+function renderSingleEmployee(id) {
+  let emp = employees.find(e => e.id === id);
+  let details = document.getElementById("detailsContent");
+
+  details.innerHTML = `
+    <p><b>Name:</b> ${emp.firstName} ${emp.lastName}</p>
+    <p><b>Email:</b> ${emp.email}</p>
+    <p><b>Phone:</b> ${emp.phone}</p>
+    <p><b>Salary:</b> ${emp.salary}</p>
+    <p><b>DOB:</b> ${emp.dob}</p>
+  `;
 }

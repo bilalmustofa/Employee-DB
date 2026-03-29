@@ -44,6 +44,15 @@ header button:hover {
   cursor: pointer;
 }
 
+.employee {
+  background: white;
+  margin: 10px 0;
+  padding: 10px;
+  box-shadow: 0 2px 5px gray;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
 .formBox {
   background: white;
   width: 300px;
