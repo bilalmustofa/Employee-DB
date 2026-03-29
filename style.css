@@ -17,6 +17,7 @@ header button {
   background-color: antiquewhite;
   border-radius: 10px;
   padding: 7px;
+  cursor: pointer;
 }
 
 #container {
@@ -25,19 +26,41 @@ header button {
   border: 2px brown solid;
   margin: 10px;
   padding: 25px 10px;
+  gap: 10px;
 }
 
-.emp-list {
+.emp-list, #employeeDetails {
   border: solid gray 2px;
   width: 50%;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
-#employeeDetails{
-   border: solid gray 2px;
-   width: 50%;
-
+.formBox {
+  background: white;
+  width: 300px;
+  margin: 100px auto;
+  padding: 20px;
+  border-radius: 10px;
 }
 
-#employeeDetails h2{
-  padding: 5px;
+#formPopup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  
+}
+
+input {
+  width: 90%;
+  margin: 5px 0;
+  padding: 8px;
+}
+
+.hidden {
+  display: none;
 }

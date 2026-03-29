@@ -1,14 +1,15 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Employee System</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
       <h1>Employee Database Management</h1>
-      <button>Add Employee</button>
+      <button id="addBtn">Add Employee</button>
     </header>
 
     <div id="container">
@@ -25,19 +26,21 @@
 
     <!-- Employee Add Form -->
     <div id="formPopup" class="hidden">
-      <div class="formBox">
-        <h2>Add Employee</h2>
+      <form action="">
+        <div class="formBox">
+          <h2>Add Employee</h2>
 
-        <input type="text" id="firstName" placeholder="First Name" />
-        <input type="text" id="lastName" placeholder="Last Name" />
-        <input type="email" id="email" placeholder="Email" />
-        <input type="text" id="phone" placeholder="Phone" />
-        <input type="text" id="salary" placeholder="Salary" />
-        <input type="date" id="dob" />
+          <input type="text" id="firstName" placeholder="First Name" required />
+          <input type="text" id="lastName" placeholder="Last Name" required />
+          <input type="email" id="email" placeholder="Email" required />
+          <input type="tel" id="phone" placeholder="Phone" required />
+          <input type="number" id="salary" placeholder="Salary" required />
+          <input type="date" id="dob" />
 
-        <button id="saveBtn">Save</button>
-        <button id="closeBtn">Close</button>
-      </div>
+          <button id="saveBtn">Save</button>
+          <button id="closeBtn">Close</button>
+        </div>
+      </form>
     </div>
 
     <script src="script.js"></script>
