@@ -13,7 +13,7 @@ header {
 
 }
 
-header button, #saveBtn, #closeBtn {
+header button, #saveBtn, #closeBtn, .employee button {
   background-color: orange;
   border-radius: 10px;
   border: none;
@@ -41,7 +41,6 @@ header button:hover {
   width: 50%;
   padding: 10px;
   border-radius: 10px;
-  cursor: pointer;
 }
 
 .employee {
@@ -49,8 +48,12 @@ header button:hover {
   margin: 10px 0;
   padding: 10px;
   box-shadow: 0 2px 5px gray;
-  cursor: pointer;
   border-radius: 12px;
+}
+
+.employee h2 {
+  padding: 5px 0;
+  cursor: pointer;
 }
 
 .formBox {

@@ -64,7 +64,7 @@ function renderEmployees() {
     let div = document.createElement("div");
     div.className = "employee";
     div.innerHTML = `
-        <strong>${emp.firstName} ${emp.lastName}</strong> <br>
+        <h2>${emp.firstName} ${emp.lastName}</h2> <br>
         <button onclick ="deleteEmployee(${emp.id})">Delete</button>`;
     div.onclick = () => renderSingleEmployee(emp.id);
     list.appendChild(div);
